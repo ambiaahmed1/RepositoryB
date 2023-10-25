@@ -20,7 +20,7 @@ public class SeleniumGitCI {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.navigate().to("https://www.google.com");
         driver.manage().window().maximize();
